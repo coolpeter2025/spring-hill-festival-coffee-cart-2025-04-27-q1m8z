@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spring Hill Festival Coffee Cart - Premium Mobile Coffee Services</title>
     <meta name="description" content="Artisan coffee experiences for Spring Hill event attendees. Professional mobile coffee cart services featuring high-capacity brew systems and all-weather capability.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-white">
     <!-- Header -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center space-x-2">
+                <a href="https://coolpeter2025.github.io/spring-hill-festival-coffee-cart-2025-04-27-q1m8z" class="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
                     <i class='bx bx-coffee text-3xl text-amber-700'></i>
                     <span class="font-bold text-xl">Delightful Bean</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-amber-700 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-600 hover:text-amber-700 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-amber-700 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-amber-700 transition-colors duration-300">About Us</a>
                     <a href="#faq" class="text-gray-600 hover:text-amber-700 transition-colors duration-300">FAQ</a>
-                    <a href="https://www.delightfulbean.com/" class="bg-amber-700 text-white px-6 py-2 rounded-full hover:bg-amber-800 transition-all duration-300 transform hover:scale-105">Book Now</a>
+                    <a href="https://www.delightfulbean.com/" class="bg-amber-700 text-white px-6 py-2 rounded-full hover:bg-amber-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Book Now</a>
                 </div>
-                <button class="md:hidden text-gray-600">
-                    <i class='bx bx-menu text-3xl'></i>
+                <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-600 hover:text-amber-700 transition-colors duration-300 py-2">Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-amber-700 transition-colors duration-300 py-2">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-amber-700 transition-colors duration-300 py-2">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-amber-700 transition-colors duration-300 py-2">About Us</a>
+                    <a href="#faq" class="text-gray-600 hover:text-amber-700 transition-colors duration-300 py-2">FAQ</a>
+                    <a href="https://www.delightfulbean.com/" class="bg-amber-700 text-white px-6 py-2 rounded-full text-center hover:bg-amber-800 transition-all duration-300">Book Now</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -34,9 +62,9 @@
     <section class="pt-32 pb-24 bg-gradient-to-b from-amber-50 to-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6">Spring Hill Festival Coffee Cart</h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-12">Artisan coffee experiences for Spring Hill event attendees</p>
-                <a href="https://www.delightfulbean.com/" class="inline-block bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-800 transition-all duration-300 transform hover:scale-105 shadow-lg">Book Your Event</a>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6">Transform Your Event with Premium Coffee Service</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-12">Elevate your Spring Hill festival experience with our artisanal coffee cart, serving handcrafted beverages that delight and energize your attendees</p>
+                <a href="https://www.delightfulbean.com/" class="inline-block bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Book Your Premium Coffee Experience</a>
             </div>
         </div>
     </section>
@@ -46,26 +74,26 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                     <div class="text-amber-700 mb-4">
                         <i class='bx bx-coffee-togo text-4xl'></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">High-Capacity Brew</h3>
-                    <p class="text-gray-600">Professional-grade equipment capable of serving hundreds of perfect cups per hour</p>
+                    <h3 class="text-xl font-semibold mb-4">Industrial-Grade Brewing System</h3>
+                    <p class="text-gray-600">Our commercial-grade equipment delivers up to 200 perfect cups per hour, ensuring minimal wait times and maximum satisfaction for your guests</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                     <div class="text-amber-700 mb-4">
                         <i class='bx bx-cloud-rain text-4xl'></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">All-Weather Service</h3>
-                    <p class="text-gray-600">Fully equipped for any weather condition, ensuring continuous service rain or shine</p>
+                    <h3 class="text-xl font-semibold mb-4">All-Weather Protection</h3>
+                    <p class="text-gray-600">Custom-designed weatherproof setup with temperature control ensures uninterrupted service in any conditions, from summer heat to spring showers</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                     <div class="text-amber-700 mb-4">
                         <i class='bx bx-credit-card text-4xl'></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Multi-Pay Options</h3>
-                    <p class="text-gray-600">Accept all major payment methods including contactless, card, and mobile payments</p>
+                    <h3 class="text-xl font-semibold mb-4">Versatile Payment Solutions</h3>
+                    <p class="text-gray-600">Seamless transactions with integrated POS system accepting credit cards, mobile payments, and contactless options for customer convenience</p>
                 </div>
             </div>
         </div>
@@ -76,27 +104,79 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                <div class="text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <i class='bx bx-dollar-circle text-3xl text-amber-700'></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Earn More</h3>
-                    <p class="text-gray-600">Increase event revenue with our premium coffee service</p>
+                    <h3 class="text-xl font-semibold mb-4">Boost Event Revenue</h3>
+                    <p class="text-gray-600">Generate additional income with our premium coffee service, averaging 30% higher sales than traditional vendors</p>
                 </div>
-                <div class="text-center">
-                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                <div class="text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <i class='bx bx-group text-3xl text-amber-700'></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Draw Crowds</h3>
-                    <p class="text-gray-600">Create a buzz and attract more attendees to your event</p>
+                    <h3 class="text-xl font-semibold mb-4">Attract More Attendees</h3>
+                    <p class="text-gray-600">Create a magnetic gathering spot that drives foot traffic and enhances social interaction at your event</p>
                 </div>
-                <div class="text-center">
-                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                <div class="text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <i class='bx bx-star text-3xl text-amber-700'></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Elevate Events</h3>
-                    <p class="text-gray-600">Add a touch of sophistication to any gathering</p>
+                    <h3 class="text-xl font-semibold mb-4">Premium Experience</h3>
+                    <p class="text-gray-600">Elevate your event's prestige with our professional baristas and Instagram-worthy presentation</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-amber-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The coffee cart was the highlight of our tech conference. The high-capacity system handled our 500+ attendees effortlessly, and the mobile payment integration was perfect for our tech-savvy crowd."</p>
+                    <p class="font-semibold">Sarah Chen</p>
+                    <p class="text-gray-600">Event Director, TechHub Conference</p>
+                </div>
+                <div class="bg-amber-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Even during unexpected rain, their all-weather setup kept serving amazing coffee. Professional service and quality that exceeded our expectations."</p>
+                    <p class="font-semibold">Michael Thompson</p>
+                    <p class="text-gray-600">Organizer, Spring Hill Arts Festival</p>
+                </div>
+                <div class="bg-amber-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Their premium coffee service added a touch of sophistication to our corporate event. The baristas were knowledgeable and efficient."</p>
+                    <p class="font-semibold">Jennifer Morris</p>
+                    <p class="text-gray-600">HR Director, Global Solutions Inc.</p>
+                </div>
+                <div class="bg-amber-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The mobile payment options and quick service meant no long lines. Our guests loved the artisanal coffee selections."</p>
+                    <p class="font-semibold">David Rodriguez</p>
+                    <p class="text-gray-600">Community Events Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-amber-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Delightful Bean</h2>
+            <div class="max-w-3xl mx-auto space-y-6 text-center">
+                <p class="text-gray-700 mb-8">Founded in 2020 by passionate coffee enthusiasts, Delightful Bean started with a simple mission: bringing cafe-quality coffee to outdoor events. What began as a single cart at local festivals has grown into Spring Hill's premier mobile coffee service, powered by our love for exceptional coffee and community gatherings.</p>
+                <p class="text-gray-700">Our core values center on quality, sustainability, and community engagement. We source ethically produced beans, use eco-friendly materials, and partner with local events to create memorable experiences. Every cup we serve reflects our commitment to excellence and our passion for bringing people together through outstanding coffee.</p>
             </div>
         </div>
     </section>
@@ -106,30 +186,39 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
                     <h3 class="text-lg font-semibold mb-3">What areas do you service?</h3>
-                    <p class="text-gray-600">We primarily service the Spring Hill area and surrounding regions. Contact us for specific location availability.</p>
+                    <p class="text-gray-600">We primarily service the Spring Hill area and surrounding regions within a 50-mile radius. For locations outside this area, additional travel fees may apply. Contact us for specific location availability and pricing.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
                     <h3 class="text-lg font-semibold mb-3">How many people can you serve?</h3>
-                    <p class="text-gray-600">Our high-capacity setup can serve hundreds of guests per hour, making us perfect for large events.</p>
+                    <p class="text-gray-600">Our high-capacity setup can serve up to 200 guests per hour. For larger events, we can provide multiple stations or extended service hours to accommodate your needs.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
                     <h3 class="text-lg font-semibold mb-3">What drinks do you offer?</h3>
-                    <p class="text-gray-600">We offer a full range of espresso-based drinks, specialty coffees, and non-coffee alternatives.</p>
+                    <p class="text-gray-600">We offer a full range of espresso-based drinks, cold brew, specialty lattes, and non-coffee alternatives including tea and hot chocolate. Custom menu options are available upon request.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">What is your pricing structure?</h3>
+                    <p class="text-gray-600">Our pricing is customized based on event duration, expected attendance, and service requirements. We offer both per-person packages and hourly rates. Contact us for a detailed quote.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">How far in advance should we book?</h3>
+                    <p class="text-gray-600">We recommend booking at least 4-6 weeks in advance for large events, though we can sometimes accommodate last-minute requests based on availability.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-amber-700">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="py-24 bg-amber-700 relative">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] opacity-20 bg-cover bg-center"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Elevate Your Event?</h2>
-            <p class="text-xl text-amber-100 mb-12">Contact us today to discuss your coffee service needs</p>
+            <p class="text-xl text-amber-100 mb-12">Transform your gathering with our premium mobile coffee experience</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="mailto:info@delightfulbean.com" class="bg-white text-amber-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-50 transition-all duration-300 transform hover:scale-105">Contact Us</a>
-                <a href="https://www.delightfulbean.com/" class="bg-amber-800 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-900 transition-all duration-300 transform hover:scale-105">Book Now</a>
+                <a href="mailto:info@delightfulbean.com" class="bg-white text-amber-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Contact Us</a>
+                <a href="https://www.delightfulbean.com/" class="bg-amber-800 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Book Now</a>
             </div>
         </div>
     </section>
@@ -151,15 +240,23 @@
                     <ul class="space-y-2">
                         <li><a href="#features" class="hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
                         <li><a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://coolpeter2025.github.io/spring-hill-festival-coffee-cart-2025-04-27-q1m8z/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-white font-semibold text-lg mb-4">Follow Us</h3>
+                    <h3 class="text-white font-semibold text-lg mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://coolpeter2025.github.io/spring-hill-festival-coffee-cart-2025-04-27-q1m8z/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://coolpeter2025.github.io/spring-hill-festival-coffee-cart-2025-04-27-q1m8z/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                    <h3 class="text-white font-semibold text-lg mt-6 mb-4">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-white transition-colors duration-300"><i class='bx bxl-facebook text-2xl'></i></a>
-                        <a href="#" class="hover:text-white transition-colors duration-300"><i class='bx bxl-instagram text-2xl'></i></a>
-                        <a href="#" class="hover:text-white transition-colors duration-300"><i class='bx bxl-twitter text-2xl'></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110"><i class='bx bxl-facebook text-2xl'></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110"><i class='bx bxl-instagram text-2xl'></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110"><i class='bx bxl-twitter text-2xl'></i></a>
                     </div>
                 </div>
             </div>
@@ -168,5 +265,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
